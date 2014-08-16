@@ -14,3 +14,8 @@ clientside/larskristian/web/data/packages
 clientside/larskristian/web/img/packages
 
 clientside/larskristian/web/packages
+
+serverside/.idea
+serverside/logs/larskristian.log
+
+serverside/website.iml
