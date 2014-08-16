@@ -6,16 +6,12 @@ release.properties
 
 clientside/larskristian/packages
 clientside/larskristian/pubspec.lock
-
 clientside/larskristian/test/packages
 clientside/larskristian/tool/packages
 clientside/larskristian/web/data/packages
-
 clientside/larskristian/web/img/packages
-
 clientside/larskristian/web/packages
 
 serverside/.idea
 serverside/logs/larskristian.log
-
 serverside/website.iml
