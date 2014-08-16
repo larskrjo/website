@@ -1,0 +1,13 @@
+<div navigation class="nav">
+  <ul class="nav">
+    <li ng-repeat="headerElement in hdr.headerElements" ng-cloak>
+      <a class="hsubs" href="{{headerElement.src}}" ng-click="hdr.setCurrentActiveView(headerElement.name)">{{headerElement.name}}</a>
+        <ul ng-if="headerElement.elements != []" class="subs">
+            <li ng-repeat="headerElementInner in headerElement.elements">
+              <a class="hsubs" href="{{headerElementInner.src}}" ng-click="hdr.setCurrentActiveView(headerElementInner.name)">{{headerElementInner.name}}</a>
+            </li>
+        </ul>
+    </li>
+    <div class="nav-pointer"></div>
+  </ul>
+</div>

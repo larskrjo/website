@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lars Kristian's Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body lkj-controller ng-switch="ctrl.elementsLoaded" ng-cloak>
+    <div ng-switch-when="false">
+      {{ctrl.message}}
+    </div>
+    <div ng-switch-when="true">
+      <lkj-header active-view="ctrl.activeView" header-elements="ctrl.headerElements"></lkj-header>
+      <ng-view></ng-view>
+      <lkj-footer></lkj-footer>
+      <script src="packages/shadow_dom/shadow_dom.min.js"></script>
+      <script async type="application/dart" src="main.dart"></script>
+      <script async src="packages/browser/dart.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+[
+  {
+    "src" : "#/home",
+    "name" : "Home",
+    "elements" : []
+  },
+  {
+    "src" : "#/about",
+    "name" : "About",
+    "elements" : []
+  },
+  {
+    "src" : "#/programming",
+    "name" : "Programming",
+    "elements" : [
+      {
+        "src" : "#/projects",
+        "name" : "Projects",
+        "elements" : []
+      },
+      {
+        "src" : "#/github",
+        "name" : "Github",
+        "elements" : []
+      },
+      {
+        "src" : "#/guides",
+        "name" : "Guides",
+        "elements" : []
+      }
+    ]
+  },
+  {
+    "src" : "#/cv",
+    "name" : "CV",
+    "elements" : []
+  },
+  {
+    "src" : "#/mystuff",
+    "name" : "My Stuff",
+    "elements" : []
+  }
+]
