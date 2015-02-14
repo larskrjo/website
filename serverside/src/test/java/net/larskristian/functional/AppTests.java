@@ -1,4 +1,4 @@
-package net.larskristian.integration;
+package net.larskristian.functional;
 
 import net.larskristian.controller.MyWebController;
 import org.junit.After;
@@ -16,7 +16,6 @@ import org.springframework.ui.ExtendedModelMap;
 @ActiveProfiles(profiles = "test")
 public class AppTests {
 
-    @SuppressWarnings("SpringJavaAutowiringInspection")
     @Autowired
     protected MyWebController controller;
 

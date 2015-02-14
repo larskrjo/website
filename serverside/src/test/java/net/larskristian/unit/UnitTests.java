@@ -17,7 +17,7 @@ import org.springframework.ui.ExtendedModelMap;
 import org.springframework.ui.Model;
 
 /**
- * Created by lars.johansen on 14/08/14.
+ * Created by Lars K. Johansen (larskrjo@gmail.com)
  */
 @RunWith(MockitoJUnitRunner.class)
 public class UnitTests {
