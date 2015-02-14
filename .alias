@@ -1,0 +1,36 @@
+alias squash='squash-func `git rev-parse --abbrev-ref HEAD`'
+alias rebase='rebase-func `git rev-parse --abbrev-ref HEAD`'
+alias utest-all='unit-all'
+alias ftest-all='func-all'
+alias utest='utest'
+alias ftest='ftest'
+
+function squash-func {
+	echo Squashing commits for brach: $1
+	# switch to master branch
+	git checkout master
+
+	# ensure our master is up to date
+	git pull origin master
+
+	# switch to the branch
+	git checkout $1
+
+	# start the squash
+	git rebase -i origin/master
+}
+
+function rebase-func {
+	echo Rebasing commits for branch: $1
+	# switch to master branch
+	git checkout master
+
+	# ensure our master is up to date
+	git pull origin master
+
+	# switch to the branch
+	git checkout $1
+
+	# start the rebase
+	git rebase origin/master
+}
