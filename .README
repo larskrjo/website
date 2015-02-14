@@ -1,1 +1,4 @@
-Add the following line to your .bash_profile: source ~/larskristian/larskristian.net/.alias
+Add the following lines to your .bash_profile:
+
+source ~/larskristian/larskristian.net/.alias
+source ~/larskristian/larskristian.net/.git_prompt

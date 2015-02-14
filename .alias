@@ -1,9 +1,47 @@
+alias help-git='help-func'
 alias squash='squash-func `git rev-parse --abbrev-ref HEAD`'
 alias rebase='rebase-func `git rev-parse --abbrev-ref HEAD`'
 alias utest-all='unit-all'
 alias ftest-all='func-all'
 alias utest='utest'
 alias ftest='ftest'
+
+function help-func {
+	echo 
+	echo Git helper commands
+	echo -------------------
+	echo 
+	echo Common topic branch commands
+	echo // To squash your commits into one
+	echo 	squash
+	echo // To fetch and rebase changes from master into branch
+	echo 	rebase
+	echo
+	echo Basic git commands
+	echo // Get the file change status
+	echo 	git status
+	echo
+	echo // Create local branch 'my-branch'
+	echo 	git checkout -b my-branch
+	echo
+	echo // Delete local branch 'my-branch'
+	echo 	git branch -d my-branch
+	echo
+	echo // Add changes to the commit
+	echo	git add --all
+	echo 
+	echo // Commit changes to local branch
+	echo 	git commit
+	echo
+	echo // Commit changes to local branch by appending previous commit
+	echo 	git commit --amend
+	echo
+	echo // Push local my-branch changes to server
+	echo 	git push origin my-branch
+	echo
+	echo // Force push local my-branch changes to server
+	echo 	git push -f origin my-branch
+}
 
 function squash-func {
 	echo Squashing commits for brach: $1
